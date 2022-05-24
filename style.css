@@ -1,0 +1,41 @@
+.wrapper{
+    display: block;
+    border: 1px solid black;
+    height: 500px;
+    margin-top: 20px;
+}
+.box{
+    display:inline-block;
+padding: 20px;
+width: 25%;
+background-color: rebeccapurple;
+}
+
+.box > strong{
+    display: block;
+    font-weight: 600;
+    background-color: black;
+    text-align: center;
+    color: red;
+}
+
+.box.static{
+    position: static;
+}
+
+
+.box.fixed{
+    position: fixed;
+    top: 20px;
+    background-color: olive;
+}
+
+@media only screen and (min-width: 500px) {
+    .box{
+        display:block;
+    padding: 20px;
+    width: 25%;
+    height: 200px;
+    background-color: orange;
+    }
+}
